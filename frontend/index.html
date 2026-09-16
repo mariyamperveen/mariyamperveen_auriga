@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Helpdesk Ticket System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Helpdesk Ticket System</h1>
+
+        <div class="controls">
+
+            <button onclick="loadTickets()">
+                All Tickets
+            </button>
+
+            <button onclick="loadOverdue()">
+                Overdue
+            </button>
+
+            <button onclick="loadMyTickets()">
+                My Tickets
+            </button>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search customer..."
+            >
+
+            <button onclick="searchTickets()">
+                Search
+            </button>
+
+        </div>
+
+        <div id="ticketContainer">
+            Loading tickets...
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
